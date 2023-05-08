@@ -97,7 +97,7 @@ to install them.
 
 TBD
 
-### Fixing the First Problem
+## Fixing the First Problem
 
 Now that you have all required tools installed, you’re ready to fix the first
 problem. To start, open your terminal and navigate to the directory that
@@ -111,12 +111,26 @@ This will start a script that runs the tests to check whether or not the code
 has been fixed. When a test fails, you’ll see which test it was and in which
 file the error was found.
 
-By default, this project is designed to check every problem in *every* file, one
-after another, so as soon as you fix one broken page, you can see which page to
-fix next. If you prefer, you can also check one file at a time as you go along.
+### Edit the Code
 
-To check only one file, you can specify it with a flag. For example, to check
-the first file run:
+The code for the all the web pages to fix can be found in the `exercises`
+directory. The first one is found at `exercises/01_html_doctype.html`. Open this
+file in your code editor. You’ll see a lot of text describing the problem. Not
+every broken page will contain as much explanatory text as the first one. It
+depends on the problem.
+
+Fix the code and save the file. If Weblings is running in your terminal, saving
+the file will cause the tests to run again automatically. Once you’ve finished
+solving the first problem, the tests will check the next broken page.
+
+### You Can Specify a Single Test
+
+By default, this project is designed to check every broken web page, one after
+another. As soon as you fix one broken page, you can see which page to fix
+next. If you prefer, you can check one web page at a time.
+
+You can specify which page to check with a flag. For example, to check the first
+file run:
 
 `npm run weblings -- exercise 01_html_doctype`
 
@@ -126,8 +140,6 @@ Please see [CONTRIBUTING](TBD) in this repo for the full details.
 
 ## Section Title TBD
 
-(1) Your user account will need to be privileged enough to install software.
-If you aren’t sure about this, give it a try. Your operating system will let you
-know if you don’t have permission. Full support for issues with user privileges
-is beyond the scope of these instructions. Consult someone with administrative
-privileges over your computer if you need assistance installing software.
+(1) Your user account will need to be privileged enough to install software. If
+you don’t have permission to install the required software, ask your computer’s
+administrator for support.
