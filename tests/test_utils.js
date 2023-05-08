@@ -25,6 +25,7 @@ export function test(description, filePath, hint, testFn) {
     messages: [],
     passed: undefined,
     async run() {
+      this.messages = [];
       this.passed = undefined;
       await testFn(assert.bind(this));
     }
