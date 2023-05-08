@@ -99,7 +99,7 @@ function enableQuit(quitFn) {
   }
 
   process.stdin.on('keypress', function(_, key) {
-    if (key?.name === config.quitKey) {
+    if (key?.name === config.quitKey || key?.ctrl && key?.name === 'c') {
       quitFn();
     }
   });
