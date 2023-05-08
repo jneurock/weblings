@@ -1,3 +1,5 @@
+NOTE: This project is a work in progress. Check back later to see more progress.
+
 # Weblings
 
 Welcome to Weblings! This project contains a series of broken web pages.
