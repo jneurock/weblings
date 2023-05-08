@@ -118,7 +118,7 @@ fix next. If you prefer, you can also check one file at a time as you go along.
 To check only one file, you can specify it with a flag. For example, to check
 the first file run:
 
-`npm run weblings --exercise html_01`
+`npm run weblings -- exercise 01_html_doctype`
 
 ## Contributing
 
