@@ -177,9 +177,9 @@ file run:
 
 ## Inspiration
 
-Weblings was directly inspired by Ziglings for the Zig language, which itself
-was inspired by Rustlings for the Rust language, among other things. These
-languages are very different from the ones covered in this project but, if
+[1] Weblings was directly inspired by Ziglings for the Zig language, which
+itself was inspired by Rustlings for the Rust language, among other things.
+These languages are very different from the ones covered in this project but, if
 you’re interested in systems programming or general purpose languages, you are
 very encouraged to give them a try, too!
 
@@ -191,12 +191,14 @@ very encouraged to give them a try, too!
 
 ## Contributing
 
-Please see [CONTRIBUTING](TBD) in this repo for the full details.
+Please see
+[CONTRIBUTING](https://github.com/jneurock/weblings/blob/main/CONTRIBUTING.md)
+in this repo for the full details.
 
 ## Notes
 
 ### Permissions
 
-Your user account will need to be privileged enough to install software. If
+[2] Your user account will need to be privileged enough to install software. If
 you don’t have permission to install the required software, ask your computer’s
 administrator for support.
