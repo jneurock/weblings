@@ -11,11 +11,12 @@ export default test(
   hint,
   async function(assert, exercisePath) {
     const html = await parseHTMLFile(exercisePath);
-    const lang = html.document.querySelector('html').lang;
+    const expected = 'en';
+    const actual = html.document.querySelector('html').lang;
 
     assert(
-       lang === 'en',
-      `Expected <html lang="en"> but found <html lang="${lang}">`
+       lang === expected,
+      `Expected <html lang="${expected}"> but found <html lang="${actual}">`
     );
   }
 );

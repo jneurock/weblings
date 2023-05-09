@@ -9,14 +9,12 @@ export default test(
   'The DOCTYPE is correctly formatted',
   hint,
   async function(assert, exercisePath) {
-    const doctypeLine = 20;
+    const expected = '<!DOCTYPE html>';
     const file = await readFile(exercisePath, { encoding: 'utf-8' });
     const lines = file.split('\n');
-    const doctype = lines[doctypeLine].trim();
+    const doctypeLine = 20;
+    const actual = lines[doctypeLine].trim();
 
-    assert(
-      doctype === '<!DOCTYPE html>',
-      `Expected <!DOCTYPE html> but found ${doctype}`
-    );
+    assert(actual === expected, `Expected ${expected} but found ${actual}`);
   }
 );
