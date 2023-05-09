@@ -26,7 +26,7 @@ encouraged to check out these additional learning resources:
 
 <p>
   <details>
-    <summary>HTML (HyperText Markup Language)</summary>
+    <summary>HTML<sup>[<a href="#notes">2</a>]</sup></summary>
     <ul>
       <li>Document structure</li>
       <li>Metadata</li>
@@ -43,7 +43,7 @@ encouraged to check out these additional learning resources:
     </ul>
   </details>
   <details>
-    <summary>CSS (Cascading Style Sheets)</summary>
+    <summary>CSS<sup>[<a href="#notes">3</a>]</sup></summary>
     <ul>
       <li>Box model</li>
       <li>Selectors</li>
@@ -83,7 +83,7 @@ displayed in web browsers; however, determining if you’ve fixed the broken pag
 would be quite difficult if you could only inspect these pages by looking at
 them in a browser. Thankfully, many tools exist to help test your code and
 ensure the broken pages have been fixed. Before you dive in, you’ll need to
-install some software<sup>[<a href="#permissions">2</a>]</sup>.
+install some software<sup>[<a href="#permissions">4</a>]</sup>.
 
 You’re going to edit some code which means you’ll need a program that can edit
 the files that contain the code. While you *could* use any text editor to do
@@ -198,8 +198,15 @@ in this repo for the full details.
 
 ## Notes
 
+[2] HTML stands for HyperText Markup Language, the standard markup language for
+documents designed to be displayed in a web browser.
+
+[3] CSS stands for Cascading Style Sheets, a style sheet language used for
+describing the presentation of a document written in a markup language such as
+HTML.
+
 ### Permissions
 
-[2] Your user account will need to be privileged enough to install software. If
+[4] Your user account will need to be privileged enough to install software. If
 you don’t have permission to install the required software, ask your computer’s
 administrator for support.
