@@ -156,9 +156,9 @@ file the error was found.
 ### Edit the Code
 
 The code for the all the web pages to fix can be found in the `exercises`
-directory. The first one is found at `exercises/01_html_doctype.html`. Open this
-file in your code editor. You’ll see a lot of text describing the problem. Not
-every broken page will contain as much explanatory text as the first one. It
+directory. The first one is found at `exercises/01_html_structure1.html`. Open
+this file in your code editor. You’ll see a lot of text describing the problem.
+Not every broken page will contain as much explanatory text as the first one. It
 depends on the problem.
 
 Fix the code and save the file. If Weblings is running in your terminal, saving
