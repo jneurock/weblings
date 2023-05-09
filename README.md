@@ -2,33 +2,74 @@ NOTE: This project is a work in progress. Check back later to see more progress.
 
 # Weblings
 
-Welcome to Weblings! This project contains a series of broken web pages.
-By fixing them, you’ll learn how to read and write code in languages for the web
-like HTML, CSS and JavaScript. You’ll also be introduced to a few tools web
-developers use to build and test web applications (think Facebook, Twitter,
-etc.) which feature many highly interactive components.
+Welcome to Weblings<sup>[<a href="#inspiration">1</a>]</sup>! This project
+contains a series of broken web pages. By fixing them, you’ll learn how to read
+and write code in languages for the web like HTML, CSS and JavaScript. You’ll
+also be introduced to a few tools web developers use to build and test web
+applications (think Facebook, Twitter, etc.) which feature many highly
+interactive components.
 
 These broken web pages need your help!
-
-This project was directly inspired by Ziglings for the Zig language, which
-itself was inspired by Rustlings for the Rust language, among other things.
-These languages are very different from the ones covered in this project but, if
-you’re interested in systems programming or general purpose languages, you are
-very encouraged to give them a try, too!
 
 ## Intended Audience
 
 This project is intended for beginners interested in dipping their toes into web
-development.
+development. Each exercise is self-contained and self-explained but you’re
+encouraged to check out these additional learning resources:
+
+* [Learn HTML](https://web.dev/learn/html/)
+* [Learn CSS](https://web.dev/learn/css/)
+* [MDN Web Docs](https://developer.mozilla.org/en-US/)
+* [MDN JavaScript Reference](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 ### Included Topics
 
-* HTML
-  * TBD
-* CSS
-  * TBD
-* JavaScript
-  * TBD
+<p>
+  <details>
+    <summary>HTML (HyperText Markup Language)</summary>
+    <ul>
+      <li>Document structure</li>
+      <li>Metadata</li>
+      <li>Semantic markup</li>
+      <li>Typography</li>
+      <li>Attributes</li>
+      <li>Links</li>
+      <li>Lists</li>
+      <li>Navigation</li>
+      <li>Tables</li>
+      <li>Forms</li>
+      <li>Images</li>
+      <li>Audio and video</li>
+    </ul>
+  </details>
+  <details>
+    <summary>CSS (Cascading Style Sheets)</summary>
+    <ul>
+      <li>Box model</li>
+      <li>Selectors</li>
+      <li>Cascade</li>
+      <li>Specificity</li>
+      <li>Inheritance</li>
+      <li>Color</li>
+      <li>Sizing</li>
+      <li>Spacing</li>
+      <li>Layout</li>
+      <li>Flexbox</li>
+      <li>Grid</li>
+      <li>Pseudo-classes</li>
+      <li>Borders</li>
+      <li>Shadows</li>
+      <li>Animations</li>
+      <li>Transitions</li>
+    </ul>
+  </details>
+  <details>
+    <summary>JavaScript</summary>
+    <ul>
+      <li>TBD</li>
+    </ul>
+  </details>
+</p>
 
 ## Getting Started
 
@@ -42,7 +83,7 @@ displayed in web browsers; however, determining if you’ve fixed the broken pag
 would be quite difficult if you could only inspect these pages by looking at
 them in a browser. Thankfully, many tools exist to help test your code and
 ensure the broken pages have been fixed. Before you dive in, you’ll need to
-install some software.
+install some software<sup>[<a href="#permissions">2</a>]</sup>.
 
 You’re going to edit some code which means you’ll need a program that can edit
 the files that contain the code. While you *could* use any text editor to do
@@ -134,12 +175,28 @@ file run:
 
 `npm run weblings -- exercise 01_html_doctype`
 
+## Inspiration
+
+Weblings was directly inspired by Ziglings for the Zig language, which itself
+was inspired by Rustlings for the Rust language, among other things. These
+languages are very different from the ones covered in this project but, if
+you’re interested in systems programming or general purpose languages, you are
+very encouraged to give them a try, too!
+
+<!--
+  TODO:
+    * Mention the HTML, CSS and JavaScript resources that inspired the exercises
+      in the project.
+-->
+
 ## Contributing
 
 Please see [CONTRIBUTING](TBD) in this repo for the full details.
 
-## Section Title TBD
+## Notes
 
-(1) Your user account will need to be privileged enough to install software. If
+### Permissions
+
+Your user account will need to be privileged enough to install software. If
 you don’t have permission to install the required software, ask your computer’s
 administrator for support.
