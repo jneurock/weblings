@@ -3,8 +3,14 @@ import { getExerciseFlag } from '../src/flags.js';
 import { print, printClear, printFail, printSuccess } from '../src/print.js';
 import { readdir } from 'node:fs/promises';
 
-function printTestFail(test) {
-  printFail(`${config.statusBroken} ${test.filePath}\n`);
+function exerciseFromTestPath(testPath) {
+  return testPath
+    .replace('./', '')
+    .replace(config.fileExtensionTests, config.fileExtensionExercise);
+}
+
+function printTestFail(test, exercise) {
+  printFail(`${config.statusBroken} ${exercise}\n`);
   test.messages.forEach((message) => printFail(`${message}\n`));
   print(`Hint: ${test.hint}\n`);
 }
@@ -42,18 +48,20 @@ export async function runTests(tests, cleanUpFn, postscriptMessage) {
 
   for (let i = 0; i < numTests; i++) {
     try {
-      const test = (await import(tests[i])).default;
+      const testPath = tests[i];
+      const exerciseFileName = exerciseFromTestPath(testPath);
+      const test = (await import(testPath)).default;
       const testDetails = `[${i + 1}/${numTests}] ${test.description}`;
-      
+
       print(testDetails);
   
-      await test.run();
+      await test.run(exerciseFileName);
   
       if (test.passed) {
         printSuccess(`${config.statusFixed}\n`);
         numPassed++;
       } else {
-        printTestFail(test);
+        printTestFail(test, exerciseFileName);
         break;
       }
     } catch(ex) {
@@ -73,7 +81,7 @@ export async function runTests(tests, cleanUpFn, postscriptMessage) {
   }
 }
 
-export function test(description, filePath, hint, testFn) {
+export function test(description, hint, testFn) {
   function assert(expectation, message) {
     if (expectation && this.passed !== false) {
       this.passed = true;
@@ -85,7 +93,6 @@ export function test(description, filePath, hint, testFn) {
 
   return {
     description,
-    filePath,
     hint,
     messages: [],
     passed: undefined,
@@ -93,9 +100,11 @@ export function test(description, filePath, hint, testFn) {
       this.messages = [];
       this.passed = undefined;
     },
-    async run() {
+    async run(exerciseFileName) {
+      const exercisePath = `./${config.pathToExercises}/${exerciseFileName}`;
+
       this.reset();
-      await testFn(assert.bind(this));
+      await testFn(assert.bind(this), exercisePath);
     }
   };
 }
