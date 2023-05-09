@@ -105,7 +105,8 @@ of course, install a different terminal, if you’d like.
 If you’re already familiar with Git, the version control system, then you
 probably don’t need much help cloning the project’s repository and getting all
 the necessary tools installed. If you’ve never heard of Git, or a version
-control system, then you can [download the project here](TBD).
+control system, then you can
+[download the project here](https://github.com/jneurock/weblings/archive/refs/heads/main.zip).
 
 ### Installation Script
 
