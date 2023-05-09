@@ -1,5 +1,6 @@
 import config from '../config.js';
-import { parseHTMLFile, test } from './test_utils.js';
+import { parseHTMLFile } from '../src/html.js';
+import {  test } from './test.js';
 
 const filePath = `${config.pathToExercises}/02_html_lang.html`;
 const hint = '\

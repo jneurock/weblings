@@ -11,11 +11,13 @@ const welcomeMessage = '\n\
 
 export default {
   dotFilesPattern: /(^|[\/\\])\../,
+  flagIndex: 2,
   flagSingleExercise: 'exercise',
+  fileExtensionExercise: '.html',
   fileExtensionTests: '.test.js',
   finishedMessage,
   pathToExercises: 'exercises',
-  pathToTests: 'tests',
+  pathToTests: 'test',
   quitKey: 'q',
   statusBroken: 'BROKEN',
   statusFixed: 'FIXED!',

@@ -1,6 +1,6 @@
 import config from '../config.js';
 import { readFile } from 'node:fs/promises';
-import { test } from './test_utils.js';
+import { test } from './test.js';
 
 const doctypeLine = 20;
 const filePath = `${config.pathToExercises}/01_html_doctype.html`;
