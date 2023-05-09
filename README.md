@@ -174,7 +174,7 @@ next. If you prefer, you can check one web page at a time.
 You can specify which page to check with a flag. For example, to check the first
 file run:
 
-`npm run weblings -- exercise 01_html_doctype`
+`npm run weblings -- exercise 01_html_structure1`
 
 ## Inspiration
 
