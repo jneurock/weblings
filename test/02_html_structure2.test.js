@@ -15,7 +15,7 @@ export default test(
     const actual = html.document.querySelector('html').lang;
 
     assert(
-       lang === expected,
+       actual === expected,
       `Expected <html lang="${expected}"> but found <html lang="${actual}">`
     );
   }
